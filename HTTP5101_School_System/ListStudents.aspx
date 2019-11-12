@@ -2,6 +2,12 @@
 
 <asp:Content ID="students_list" ContentPlaceHolderID="body" runat="server">
     <h1>Students</h1>
+    <div>
+   <asp:label for="student_search" runat="server">Search:</asp:label>
+        <asp:TextBox ID="student_search" runat="server"></asp:TextBox>
+        <asp:Button runat="server" text="submit"/>
+    <div id="sql_debugger" runat="server"></div>
+    </div>
     <div id="students_result" class="_table" runat="server">
         <div class="listitem">
             <div class="col4">FIRST NAME</div>
