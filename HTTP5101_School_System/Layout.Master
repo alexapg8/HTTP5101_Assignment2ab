@@ -16,7 +16,7 @@
                     <li><a href="ListStudents.aspx">Students</a></li>
                     <li><a href="ListTeaches.aspx">Teachers</a></li>
                     <li><a href="ListClasses.aspx">Classes</a></li>
-                    <li><a href="LogInForm.aspx">Log In</a></li>
+                    <li><a href="LogInForm.aspx">Log Out</a></li>
                 </ul>
             </div>
         </div>
@@ -35,7 +35,7 @@
                     <li><a href="ListStudents.aspx">Students</a></li>
                     <li><a href="ListTeachers.aspx">Teachers</a></li>
                     <li><a href="ListClasses.aspx">Classes</a></li>
-                    <li><a href="LogInForm.aspx">Log In</a></li>
+                    <li><a href="LogInForm.aspx">Log Out</a></li>
                 </ul>
             </div>
            <div id="copyright">Copyright 2019</div>
