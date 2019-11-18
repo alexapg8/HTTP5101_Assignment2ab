@@ -168,6 +168,59 @@ namespace HTTP5101_School_System
             return student;
         }
 
+        //Create a query to return individual classes
+        public Dictionary<String, String> FindClass(int id)
+        {
+            MySqlConnection Connect = new MySqlConnection(ConnectionString);
+            Dictionary<String, String> singleclass = new Dictionary<String, String>();
+
+            // get class information from database
+            try
+            {
+                string query = "select * from CLASSES where classid = " + id;
+                Debug.WriteLine("Connection Initialized..."); //debugging step
+
+                //New database connection
+                Connect.Open();
+                MySqlCommand cmd = new MySqlCommand(query, Connect);
+                MySqlDataReader resultset = cmd.ExecuteReader();
+
+                //Get the information as a list
+                List<Dictionary<String, String>> Classes = new List<Dictionary<String, String>>();
+
+                //Get results
+                while (resultset.Read())
+                {
+                    Dictionary<String, String> Class_Detail = new Dictionary<String, String>();
+
+                    //Look at each column in the result set row, add both the column name and the column value to our Student dictionary
+                    for (int i = 0; i < resultset.FieldCount; i++)
+                    {
+                        Debug.WriteLine("Attempting to transfer data of " + resultset.GetName(i));
+                        Debug.WriteLine("Attempting to transfer data of " + resultset.GetString(i));
+                        Class_Detail.Add(resultset.GetName(i), resultset.GetString(i));
+
+                    }
+                    //Add the student to the list of students
+                    Classes.Add(Class_Detail);
+                }
+
+                singleclass = Classes[0]; //get the first student
+
+            }
+            catch (Exception ex)
+            {
+                //If something (anything) goes wrong with the try{} block, this block will execute
+                Debug.WriteLine("Something went wrong in the find Class method!");
+                Debug.WriteLine(ex.ToString());
+            }
+
+            Connect.Close();
+            Debug.WriteLine("Database Connection Terminated.");
+
+            return singleclass;
+        } // end individual class query
+
 
 
     }
