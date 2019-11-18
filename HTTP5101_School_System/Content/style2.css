@@ -34,6 +34,11 @@ body {
 .col4, .col4last{float:left; width:21.73%; margin-right:4.34%;}
 .col4last{margin-right:0%;}
 
+.search_name {
+	text-transform:uppercase;
+	font-size:0.9em;
+	font-weight:bold;
+}
 .search_box {
 	float:right;
 	padding:1em;
@@ -46,6 +51,32 @@ body {
 }
 .button:active {
 	background:#840032;
+}
+.edit_button {
+	float:right;
+	margin-top:1em;
+	margin-bottom:2em;
+	padding-bottom:1em;
+}
+.list_titles {
+	text-transform:uppercase;
+	font-size:1.5em;
+}
+.show_table {
+	background:#d190a9;
+	padding:1em;
+	color:#002642;
+	border-radius:10px 10px;
+}
+.details_title {
+	padding-bottom: 1em;
+}
+.details_name {
+	font-weight:bold;
+	margin-bottom:0;
+}
+.details_results {
+	font-weight:normal;
 }
 a {
   color:orange;
@@ -79,3 +110,6 @@ a:active {
 	margin-right:5em;
 	font-size:0.5em;
 	}
+#copyright {
+	font-size:0.5em;
+}

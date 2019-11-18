@@ -5,12 +5,20 @@
 <html>
 <head runat="server">
     <title>School System</title>
-    <link rel="stylesheet" type="text/css" href="/Content/style.css" />
+    <link rel="stylesheet" type="text/css" href="/Content/style2.css" />
 </head>
 <body>
     <header>
         <div class="cwidth">
-            Header Content Here
+            <h1>Xavier's School for Gifted Youngsters</h1>
+            <div class="listnav">
+                <ul>
+                    <li><a href="ListStudents.aspx">Students</a></li>
+                    <li><a href="ListTeaches.aspx">Teachers</a></li>
+                    <li><a href="ListClasses.aspx">Classes</a></li>
+                    <li><a href="LogInForm.aspx">Log In</a></li>
+                </ul>
+            </div>
         </div>
     </header>
     <div class="cwidth">
@@ -21,7 +29,16 @@
     </div>
     <footer>
         <div class="cwidth">
-            Footer Content Here
+            Xavier's School for Gifted Youngsters
+            <div class="listnavfooter">
+                <ul>
+                    <li><a href="ListStudents.aspx">Students</a></li>
+                    <li><a href="ListTeachers.aspx">Teachers</a></li>
+                    <li><a href="ListClasses.aspx">Classes</a></li>
+                    <li><a href="LogInForm.aspx">Log In</a></li>
+                </ul>
+            </div>
+           <div id="copyright">Copyright 2019</div>
         </div>
     </footer>
 </body>

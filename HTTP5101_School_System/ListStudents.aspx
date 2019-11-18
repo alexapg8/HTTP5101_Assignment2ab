@@ -1,12 +1,12 @@
 ﻿<%@ Page Title="Specific" Language="C#" MasterPageFile="~/Layout.Master" AutoEventWireup="true" CodeBehind="ListStudents.aspx.cs" Inherits="HTTP5101_School_System.ListStudents" %>
 
 <asp:Content ID="students_list" ContentPlaceHolderID="body" runat="server">
-    <h1>Students</h1>
-    <div>
-   <asp:label for="student_search" runat="server">Search:</asp:label>
+    <h1 class="list_titles">Students</h1>
+    <div class="search_box">
+    <asp:label for="student_search" class="search_name" runat="server">Search:</asp:label>
         <asp:TextBox ID="student_search" runat="server"></asp:TextBox>
-        <asp:Button runat="server" text="submit"/>
-    <div id="sql_debugger" runat="server"></div>
+        <asp:Button CssClass="button" runat="server" text="SUBMIT"/>
+    <!-- <div id="sql_debugger" runat="server"></div> -->
     </div>
     <div id="students_result" class="_table" runat="server">
         <div class="listitem">
