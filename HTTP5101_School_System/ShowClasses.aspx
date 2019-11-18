@@ -1,5 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Layout.Master" AutoEventWireup="true" CodeBehind="ShowClasses.aspx.cs" Inherits="HTTP5101_School_System.ShowClasses" %>
-<asp:Content ID="student_view" ContentPlaceHolderID="body" runat="server">
+<asp:Content ID="class_view" ContentPlaceHolderID="body" runat="server">
 
     <div id="class_detail" runat="server" class="show_table">
         <h2 class="details_title">Details for <span id="class_name" runat="server"></span></h2>

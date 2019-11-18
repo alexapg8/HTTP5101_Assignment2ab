@@ -10,7 +10,10 @@
 <body>
     <header>
         <div class="cwidth">
-            <h1>Xavier's School for Gifted Youngsters</h1>
+
+            <img src="Content/images/xmenlogo.png" alt="Xavier's School for Gifted Youngsters logo" id="XmenLogo_header"/>
+            <h1 id="school_name">Xavier's School for Gifted Youngsters</h1>
+         
             <div class="listnav">
                 <ul>
                     <li><a href="ListStudents.aspx">Students</a></li>
@@ -29,6 +32,7 @@
     </div>
     <footer>
         <div class="cwidth">
+            <div><img src="Content/images/xmenlogo.png" alt="Xavier's School for Gifted Youngsters logo" id="XmenLogo_footer"/></div>
             Xavier's School for Gifted Youngsters
             <div class="listnavfooter">
                 <ul>

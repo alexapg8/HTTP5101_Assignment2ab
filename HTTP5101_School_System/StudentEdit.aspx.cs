@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace HTTP5101_School_System
 {
-    public partial class ShowStudent : System.Web.UI.Page
+    public partial class StudentEdit : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -15,7 +15,7 @@ namespace HTTP5101_School_System
             string studentid = Request.QueryString["studentid"];
             if (String.IsNullOrEmpty(studentid)) valid = false;
 
-            //We will attempt to get the record we need
+        
             if (valid)
             {
                 var db = new SCHOOLDB();
@@ -24,10 +24,6 @@ namespace HTTP5101_School_System
                 if (student_record.Count > 0)
                 {
                     student_title_fname.InnerHtml = student_record["STUDENTFNAME"] + " " + student_record["STUDENTLNAME"];
-                    student_fname.InnerHtml = student_record["STUDENTFNAME"];
-                    student_lname.InnerHtml = student_record["STUDENTLNAME"];
-                    student_number.InnerHtml = student_record["STUDENTNUMBER"];
-                    enrolment_date.InnerHtml = student_record["ENROLMENTDATE"];
                 }
                 else
                 {
@@ -39,8 +35,6 @@ namespace HTTP5101_School_System
             {
                 student.InnerHtml = "There was an error finding that student.";
             }
-            /*https://stackoverflow.com/questions/23976683/asp-net-button-to-redirect-to-another-page */
-            studentedit_btn.PostBackUrl = "~/StudentEdit.aspx?studentid=" + studentid ;
         }
     }
 }
