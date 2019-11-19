@@ -5,8 +5,7 @@
     <h1>Register for Classes</h1>
 
     <!-- Registration form -->
-    <div class="form">
-        <!-- form wrapper -->
+    <div class="form"><!-- form wrapper -->
         <asp:Label for="fname" runat="server">First Name:</asp:Label>
         <asp:TextBox runat="server" ID="fname"></asp:TextBox>
 
@@ -20,7 +19,6 @@
         <asp:DropDownList runat="server" ID="courselist" DataTextField="CLASSNAME" DataValueField="CLASSCODE">
         </asp:DropDownList>
 
-        <asp:Button runat="server" Text="Submit" /><!-- END REGISTRATION FORM -->
-    </div>
-    <!-- END FORM WRAPPER -->
+        <asp:Button runat="server" Text="Submit" PostBackUrl="~/ListClasses.aspx" />
+    </div> <!-- END FORM WRAPPER -->
 </asp:Content>
