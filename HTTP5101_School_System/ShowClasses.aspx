@@ -7,6 +7,6 @@
         <h3 class="details_name">Start Date: <span id="start_date" class="details_results" runat="server"></span></h3><br />
         <h3 class="details_name">End Date: <span id="end_date" class="details_results" runat="server"></span></h3><br />
     </div> <!-- end profile box -->
-    <div class="edit_button"><asp:Button CssClass="button" runat="server" text="REGISTER"/></div>
+    <asp:Button CssClass="button" runat="server" PostBackUrl="~/Register.aspx" text="REGISTER"/>
     
 </asp:Content>

@@ -1,5 +1,4 @@
-﻿
-/*GENERAL CSS*/
+﻿/*GENERAL CSS*/
 .cwidth{max-width:1080px; margin:0 auto;}
 header,footer{background:#002642;}
 header{margin-bottom:50px;}
@@ -11,22 +10,9 @@ header,footer {
 	text-transform:uppercase;
 	color:#fff;
 	}
-footer {
-	text-align:center;
-}
-#school_name {
-	position:relative;
-	margin-left:4em;
-}
-#XmenLogo_header {
-	max-width:95px;
+#XmenLogo {
+	max-width:100px;
 	max-height:auto;
-	position:absolute;
-}
-#XmenLogo_footer {
-	max-width:40px;
-	max-height:auto;
-	margin-bottom:1em;
 }
 body {
 	font-family:Arial,sans-serif;
@@ -64,10 +50,15 @@ body {
 	padding:0.5em;
 	color:#e5dada;
 	border-radius:10px 10px;
-	margin-top:1em;
 }
 .button:active {
 	background:#840032;
+}
+.edit_button {
+	float:right;
+	margin-top:1em;
+	margin-bottom:2em;
+	padding-bottom:1em;
 }
 .list_titles {
 	text-transform:uppercase;
@@ -78,15 +69,6 @@ body {
 	padding:1em;
 	color:#002642;
 	border-radius:10px 10px;
-	margin-bottom:1em;
-}
-.edit_table {
-	background:#d190a9;
-	padding:1em;
-	color:#002642;
-	border-radius:10px 10px;
-	height:320px;
-	margin-bottom:1em;
 }
 .details_title {
 	padding-bottom: 1em;
@@ -97,9 +79,6 @@ body {
 }
 .details_results {
 	font-weight:normal;
-}
-.details_title, .details_name {
-	margin-left:4em;
 }
 .LogIn_table {
 	background:#d190a9;
@@ -114,21 +93,16 @@ body {
 .login_titles, .login_text {
 	margin-bottom:1em;
 }
-.picture_col {
-	position:relative;
-    display:inline-block;
-	float:right;
-	margin-top:3em;
-	margin-right:5em;
+.form {
+    background:#d190a9;
+    padding:1em;
+    color:#002642;
+    border-radius:10px 10px;
+    max-width:400px;
 }
-.profile_picture {
-	max-width:250px;
-	max-height:auto;
-	text-align:center;
-}
-.studentedit_text {
-	margin-bottom:1em;
-	font-size:1.5em;
+.register_text {
+    font-size:1em;
+
 }
 a {
   color:orange;

@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Layout.Master" AutoEventWireup="true" CodeBehind="DropClass.aspx.cs" Inherits="HTTP5101_School_System.DropClass" %>
 <asp:Content ID="drop_class" ContentPlaceHolderID="body" runat="server">
     <div class="LogIn_table">
-       <h2 class="details_title">Please confirm</h2>
+       <h2>Please confirm</h2>
        <div> <!-- confirm or cancel button -->
            <p>Are you sure you would like to drop this course?</p>
            <asp:Button CssClass="button" runat="server" text="DROP COURSE" PostBackUrl="~/ListClasses.aspx" />

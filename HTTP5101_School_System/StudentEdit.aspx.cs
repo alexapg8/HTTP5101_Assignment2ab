@@ -35,6 +35,7 @@ namespace HTTP5101_School_System
             {
                 student.InnerHtml = "There was an error finding that student.";
             }
+            studentsubmit_btn.PostBackUrl = "~/ShowStudent.aspx?studentid=" + studentid;
         }
     }
 }

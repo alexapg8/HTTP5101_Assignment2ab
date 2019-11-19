@@ -3,16 +3,28 @@
 header,footer{background:#002642;}
 header{margin-bottom:50px;}
 footer{margin-top:50px;}
-
 header,footer {
 	padding:1em;
 	font-family:Arial,sans-serif;
 	text-transform:uppercase;
 	color:#fff;
 	}
-#XmenLogo {
-	max-width:100px;
+footer {
+	text-align:center;
+}
+#school_name {
+	position:relative;
+	margin-left:4em;
+}
+#XmenLogo_header {
+	max-width:95px;
 	max-height:auto;
+	position:absolute;
+}
+#XmenLogo_footer {
+	max-width:40px;
+	max-height:auto;
+	margin-bottom:1em;
 }
 body {
 	font-family:Arial,sans-serif;
@@ -20,10 +32,9 @@ body {
 /*CSS FOR TABLE-LIKE STYLING*/
 #students_result {width:100%;}
 .listitem {background:#fefefe; padding: 12px 5%; width:90%; overflow:hidden;}
-
 .listitem:after{clear:both;}
 .listitem:nth-child(2n){background:#91b1c9;}
-.listitem:hover {background: #d190a9; color:#e5dada}
+.listitem:hover {background: #D190A9; color:#e5dada}
 .listitem a {color:#002642;}
 .listitem a:visited {color:#840032;}
 .listitem a:hover {color:#e5dada;}
@@ -35,7 +46,6 @@ body {
 */
 .col4, .col4last{float:left; width:21.73%; margin-right:4.34%;}
 .col4last{margin-right:0%;}
-
 .search_name {
 	text-transform:uppercase;
 	font-size:0.9em;
@@ -50,15 +60,10 @@ body {
 	padding:0.5em;
 	color:#e5dada;
 	border-radius:10px 10px;
+	margin-top:1em;
 }
 .button:active {
 	background:#840032;
-}
-.edit_button {
-	float:right;
-	margin-top:1em;
-	margin-bottom:2em;
-	padding-bottom:1em;
 }
 .list_titles {
 	text-transform:uppercase;
@@ -69,6 +74,15 @@ body {
 	padding:1em;
 	color:#002642;
 	border-radius:10px 10px;
+	margin-bottom:1em;
+}
+.edit_table {
+	background:#d190a9;
+	padding:1em;
+	color:#002642;
+	border-radius:10px 10px;
+	height:auto;
+	margin-bottom:1em;
 }
 .details_title {
 	padding-bottom: 1em;
@@ -79,6 +93,9 @@ body {
 }
 .details_results {
 	font-weight:normal;
+}
+.details_title, .details_name {
+	margin-left:4em;
 }
 .LogIn_table {
 	background:#d190a9;
@@ -93,6 +110,29 @@ body {
 .login_titles, .login_text {
 	margin-bottom:1em;
 }
+.picture_col {
+	position:relative;
+    display:inline-block;
+	float:right;
+	margin-top:3em;
+	margin-right:5em;
+}
+.profile_picture {
+	max-width:250px;
+	max-height:auto;
+	text-align:center;
+}
+.studentedit_text, .register_text, .teacheredit_text {
+	margin-bottom:3em;
+	font-size:1em;
+}
+.form {
+	background:#d190a9;
+	padding:1em;
+	color:#002642;
+	border-radius:10px 10px;
+	max-width:auto;
+}
 a {
   color:orange;
   text-decoration:none;
@@ -106,7 +146,6 @@ a:hover {
 a:active {
   color:#e5dada;
 }
-
 .listnav {
 	margin-left:28em;
 }

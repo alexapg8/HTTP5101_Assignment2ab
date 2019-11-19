@@ -2,23 +2,25 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="body" runat="server">
 
-    <h1>Register for Classes</h1>
+    
 
     <!-- Registration form -->
     <div class="form"><!-- form wrapper -->
-        <asp:Label for="fname" runat="server">First Name:</asp:Label>
-        <asp:TextBox runat="server" ID="fname"></asp:TextBox>
+        <h2 class="details_title">Register for Classes</h2>
+        <asp:Label for="fname" runat="server" class="details_name">First Name:</asp:Label>
+        <asp:TextBox runat="server" ID="fname" class="register_text"></asp:TextBox><br />
 
-        <asp:Label for="lname" runat="server">Last Name:</asp:Label>
-        <asp:TextBox runat="server" ID="lname"></asp:TextBox>
+        <asp:Label for="lname" runat="server" class="details_name">Last Name:</asp:Label>
+        <asp:TextBox runat="server" ID="lname" class="register_text"></asp:TextBox><br />
 
-        <asp:Label for="studentID" runat="server">Student ID:</asp:Label>
-        <asp:TextBox runat="server" ID="studentID"></asp:TextBox>
+        <asp:Label for="studentID" runat="server" class="details_name">Student ID:</asp:Label>
+        <asp:TextBox runat="server" ID="studentID" class="register_text"></asp:TextBox><br />
 
-        <asp:Label for="courselist" runat="server">Please select the course:</asp:Label>
-        <asp:DropDownList runat="server" ID="courselist" DataTextField="CLASSNAME" DataValueField="CLASSCODE">
-        </asp:DropDownList>
+        <asp:Label for="courselist" runat="server" class="details_name">Please select the course:</asp:Label>
+        <asp:DropDownList runat="server" ID="courselist" DataTextField="CLASSNAME" DataValueField="CLASSCODE" class="register_text">
+        </asp:DropDownList><br />
 
-        <asp:Button runat="server" Text="Submit" PostBackUrl="~/ListClasses.aspx" />
     </div> <!-- END FORM WRAPPER -->
+    <asp:Button CssClass="button" runat="server" Text="Submit" PostBackUrl="~/ListClasses.aspx" />
+    <asp:Button CssClass="button" runat="server" Text="Drop" PostBackUrl="~/DropClass.aspx" />
 </asp:Content>

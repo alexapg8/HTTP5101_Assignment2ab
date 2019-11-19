@@ -5,7 +5,7 @@
 <html>
 <head runat="server">
     <title>School System</title>
-    <link rel="stylesheet" type="text/css" href="/Content/style2.css" />
+    <link rel="stylesheet" type="text/css" href="/Content/style.css" />
 </head>
 <body>
     <header>
@@ -17,7 +17,7 @@
             <div class="listnav">
                 <ul>
                     <li><a href="ListStudents.aspx">Students</a></li>
-                    <li><a href="ListTeaches.aspx">Teachers</a></li>
+                    <li><a href="ListTeachers.aspx">Teachers</a></li>
                     <li><a href="ListClasses.aspx">Classes</a></li>
                     <li><a href="LogInForm.aspx">Log Out</a></li>
                 </ul>
