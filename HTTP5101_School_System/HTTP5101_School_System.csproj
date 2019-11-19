@@ -126,6 +126,13 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\images\ListWireframe.jpg" />
+    <Content Include="Content\images\LogInPageWireframe.jpg" />
+    <Content Include="Content\images\profilepicture.png" />
+    <Content Include="Content\images\RegisterFormWireframe.jpg" />
+    <Content Include="Content\images\ShowClassesWireframe.jpg" />
+    <Content Include="Content\images\ShowWireframe.jpg" />
+    <Content Include="Content\images\xmenlogo.png" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\style.css" />
     <Content Include="Content\style2.css" />
@@ -180,6 +187,7 @@
     <Content Include="ShowStudent.aspx" />
     <Content Include="ShowTeacher.aspx" />
     <Content Include="StudentEdit.aspx" />
+    <Content Include="TeacherEdit.aspx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
   </ItemGroup>
@@ -268,6 +276,13 @@
     </Compile>
     <Compile Include="StudentEdit.aspx.designer.cs">
       <DependentUpon>StudentEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherEdit.aspx.cs">
+      <DependentUpon>TeacherEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TeacherEdit.aspx.designer.cs">
+      <DependentUpon>TeacherEdit.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
