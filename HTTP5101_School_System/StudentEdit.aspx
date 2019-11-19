@@ -11,9 +11,9 @@
         <asp:TextBox class="studentedit_text" runat="server"></asp:TextBox><br />
         <asp:label for="student_lname_edit" class="details_name" runat="server">Last Name: </asp:label>
         <asp:TextBox class="studentedit_text" runat="server"></asp:TextBox><br />
-        <asp:label for="student_num_edit" class="details_name" runat="server">Student Number: </asp:label>
+        <asp:label for="student_pnum_edit" class="details_name" runat="server">Phone Number: </asp:label>
         <asp:TextBox class="studentedit_text" runat="server"></asp:TextBox><br />
-        <asp:label for="student_enrol_edit" class="details_name" runat="server">Enrolment Date: </asp:label>
+        <asp:label for="student_address_edit" class="details_name" runat="server">Address: </asp:label>
         <asp:TextBox class="studentedit_text" runat="server"></asp:TextBox><br />
     </div>
     <!-- end of edit student table -->

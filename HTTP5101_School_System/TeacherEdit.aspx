@@ -9,9 +9,9 @@
         <asp:TextBox class="teacheredit_text" runat="server"></asp:TextBox><br />
         <asp:label for="teacher_lname_edit" class="details_name" runat="server">Last Name: </asp:label>
         <asp:TextBox class="teacheredit_text" runat="server"></asp:TextBox><br />
-        <asp:label for="teacher_num_edit" class="details_name" runat="server">Employee Number: </asp:label>
+        <asp:label for="teacher_pnum_edit" class="details_name" runat="server">Phone Number: </asp:label>
         <asp:TextBox class="teacheredit_text" runat="server"></asp:TextBox><br />
-        <asp:label for="teacher_hire_date" class="details_name" runat="server">Hire Date: </asp:label>
+        <asp:label for="teacher_address_edit" class="details_name" runat="server">Address: </asp:label>
         <asp:TextBox class="teacheredit_text" runat="server"></asp:TextBox><br />
     </div>
 
