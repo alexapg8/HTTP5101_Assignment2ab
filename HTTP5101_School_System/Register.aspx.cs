@@ -40,9 +40,6 @@ namespace HTTP5101_School_System
                 Purpose: This article gave the insight that we needed to understand where we were missing the myConnectionString object, which was causing the NullReferenceException error. This article referenced the Web.config file, and we realized we needed to declare our connection string in that file, so that we can call it here. The code used is in the Web.config file, Line 41-43. When we looked at that file, we also realized we were missing System.Configuration in front of ConfigurationManager.
  
              */
-
-            if (!IsPostBack) 
-            {
                 string connectionstring = System.Configuration.ConfigurationManager.ConnectionStrings["myConnectionString"].ConnectionString;
                 using (MySqlConnection con = new MySqlConnection(connectionstring))
                 {
@@ -54,8 +51,6 @@ namespace HTTP5101_School_System
                     courselist.DataBind();
 
                 }
-
-            } // end of if statement
 
 
 
