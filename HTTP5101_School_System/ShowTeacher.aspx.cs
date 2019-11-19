@@ -29,8 +29,13 @@ namespace HTTP5101_School_System
                         teacher_lname.InnerHtml = teacher_record["TEACHERLNAME"];
                         teacher_number.InnerHtml = teacher_record["EMPLOYEENUMBER"];
                         hire_date.InnerHtml = teacher_record["HIREDATE"];
-                        Salary.InnerHtml = teacher_record["SALARY"];
-                    }
+                        Salary.InnerHtml = teacher_record["SALARY"] ;
+
+                    
+                
+
+                    } 
+
                     else
                     {
                         valid = false;
