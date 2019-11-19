@@ -168,6 +168,67 @@ namespace HTTP5101_School_System
             return student;
         }
 
+        //The objective of this method in the schooldb class is to find a particular teacher given an integer ID
+        //We will return a dictionary because a teacher is defined as having keys and values
+        //for example:
+        // {"TEACHERFNAME":"MOUNICA", "TEACHERLNAME":"SYKAM", "TEACHERNUMBER":"N0000"}
+        public Dictionary<String, String> FindTeacher(int id)
+        {
+
+            MySqlConnection Connect = new MySqlConnection(ConnectionString);
+
+            Dictionary<String, String> teacher = new Dictionary<String, String>();
+
+            try
+            {
+                //Build a custom query with the id information provided
+                string query = "select * from TEACHERS where teacherid = " + id;
+                Debug.WriteLine("Connection Initialized...");
+                //open the db connection
+                Connect.Open();
+                //Run out query against the database
+                MySqlCommand cmd = new MySqlCommand(query, Connect);
+                //grab the result set
+                MySqlDataReader resultset = cmd.ExecuteReader();
+
+                //Create a list of teachers (although we're only trying to get 1)
+                List<Dictionary<String, String>> Teachers = new List<Dictionary<String, String>>();
+
+                //read through the result set
+                while (resultset.Read())
+                {
+                    //information that will store a single teacher
+                    Dictionary<String, String> Teacher = new Dictionary<String, String>();
+
+                    //Look at each column in the result set row, add both the column name and the column value to our teacher dictionary
+                    for (int i = 0; i < resultset.FieldCount; i++)
+                    {
+                        Debug.WriteLine("Attempting to transfer data of " + resultset.GetName(i));
+                        Debug.WriteLine("Attempting to transfer data of " + resultset.GetString(i));
+                        Teacher.Add(resultset.GetName(i), resultset.GetString(i));
+
+                    }
+                    //Add the teacher to the list of teachers
+                    Teachers.Add(Teacher);
+                }
+
+                teacher = Teachers[0];
+
+            }
+        
+            catch (Exception ex)
+            {
+                //If something (anything) goes wrong with the try{} block, this block will execute
+                Debug.WriteLine("Something went wrong in the find teacher method!");
+                Debug.WriteLine(ex.ToString());
+            }
+
+            Connect.Close();
+            Debug.WriteLine("Database Connection Terminated.");
+
+            return teacher;
+        }
+
         //Create a query to return individual classes
         public Dictionary<String, String> FindClass(int id)
         {
