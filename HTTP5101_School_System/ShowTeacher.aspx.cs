@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace HTTP5101_School_System
 {
-    public partial class ShowTeachers : System.Web.UI.Page
+    public partial class ShowTeacher : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -43,6 +43,7 @@ namespace HTTP5101_School_System
                 }
                 /*https://stackoverflow.com/questions/23976683/asp-net-button-to-redirect-to-another-page */
                 teacheredit_btn.PostBackUrl = "~/TeacherEdit.aspx?teacherid=" + teacherid;
+
             }
         }
     }

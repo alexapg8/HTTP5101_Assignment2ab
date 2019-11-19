@@ -11,7 +11,7 @@ namespace HTTP5101_School_System
 {
 
 
-    public partial class ShowTeachers
+    public partial class ShowTeacher
     {
 
         /// <summary>

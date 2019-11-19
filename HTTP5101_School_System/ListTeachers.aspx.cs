@@ -12,9 +12,9 @@ namespace HTTP5101_School_System
         protected void Page_Load(object sender, EventArgs e)
         {
             /*
-               An alternate way to fetch data without the SCHOOLDB.cs class
-               https://dev.mysql.com/doc/connector-net/en/connector-net-tutorials-sql-command.html
-           */
+              An alternate way to fetch data without the SCHOOLDB.cs class
+              https://dev.mysql.com/doc/connector-net/en/connector-net-tutorials-sql-command.html
+          */
             teachers_results.InnerHtml = "";
 
             string searchkey = "";

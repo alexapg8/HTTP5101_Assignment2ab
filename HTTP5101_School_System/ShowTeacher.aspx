@@ -1,5 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ShowTeachers.aspx.cs" Inherits="HTTP5101_School_System.ShowTeachers" %>
-
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Layout.Master" AutoEventWireup="true" CodeBehind="ShowTeacher.aspx.cs" Inherits="HTTP5101_School_System.ShowTeacher" %>
 <asp:Content ID="teacher_view" ContentPlaceHolderID="body" runat="server">
     <div class="picture_col">
         <img src="Content/images/profilepicture.png" alt="Profile Picture" class="profile_picture" />
