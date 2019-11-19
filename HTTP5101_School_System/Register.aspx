@@ -21,6 +21,6 @@
         </asp:DropDownList><br />
 
     </div> <!-- END FORM WRAPPER -->
-    <asp:Button ID="registrationsubmit_btn" CssClass="button" runat="server" Text="Submit" PostBackUrl="~/ListClasses.aspx" />
-    <asp:Button ID="registrationdrop_btn" CssClass="button" runat="server" Text="Drop" PostBackUrl="~/DropClass.aspx" />
+    <asp:Button ID="registrationsubmit_btn" CssClass="button" runat="server" Text="SUBMIT" PostBackUrl="~/ListClasses.aspx" />
+    <asp:Button ID="registrationdrop_btn" CssClass="button" runat="server" Text="DROP" PostBackUrl="~/DropClass.aspx" />
 </asp:Content>

@@ -11,7 +11,7 @@ namespace HTTP5101_School_System
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            login_btn.PostBackUrl = "~/LogInForm.aspx";
+            login_btn.PostBackUrl = "~/ListStudents.aspx";
         }
     }
 }
