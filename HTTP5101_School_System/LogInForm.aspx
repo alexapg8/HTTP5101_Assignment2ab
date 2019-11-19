@@ -9,7 +9,7 @@
        </div>
        <div>
          <asp:label for="log_in" class="login_titles" runat="server">Password:</asp:label>
-         <asp:TextBox class="login_text" runat="server"></asp:TextBox>
+         <asp:TextBox class="login_text" runat="server" TextMode="password"></asp:TextBox>
        </div>
         <!-- end of log in table -->
         <!-- submit button -->
