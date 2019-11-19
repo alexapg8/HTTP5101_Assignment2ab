@@ -43,7 +43,7 @@ namespace HTTP5101_School_System
                 string teacherid = row["TEACHERID"];
 
                 string teahcherfirstname = row["TEACHERFNAME"];
-                teachers_results.InnerHtml += "<div class=\"col4\"><a href=\"ShowStudent.aspx?studentid=" + teacherid + "\">" + teahcherfirstname + "</a></div>";
+                teachers_results.InnerHtml += "<div class=\"col4\"><a href=\"ShowTeacher.aspx?teacherid=" + teacherid + "\">" + teahcherfirstname + "</a></div>";
 
                 string teacherlastname = row["TEACHERLNAME"];
                 teachers_results.InnerHtml += "<div class=\"col4\">" + teacherlastname + "</div>";
