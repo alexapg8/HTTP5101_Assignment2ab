@@ -41,7 +41,7 @@ namespace HTTP5101_School_System
                 {
                     teacher.InnerHtml = "There was an error finding that teacher.";
                 }
-                /*https://stackoverflow.com/questions/23976683/asp-net-button-to-redirect-to-another-page */
+                
                 teacheredit_btn.PostBackUrl = "~/TeacherEdit.aspx?teacherid=" + teacherid;
 
             }

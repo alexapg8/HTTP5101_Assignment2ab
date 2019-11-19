@@ -4,8 +4,8 @@
        <h2>Please confirm</h2>
        <div> <!-- confirm or cancel button -->
            <p>Are you sure you would like to drop this course?</p>
-           <asp:Button CssClass="button" runat="server" text="DROP COURSE" PostBackUrl="~/ListClasses.aspx" />
-           <asp:Button CssClass="button" runat="server" text="CANCEL" PostBackUrl="~/ListClasses.aspx"/> 
+           <asp:Button ID="dropconfirm_btn" CssClass="button" runat="server" text="DROP COURSE" PostBackUrl="~/ListClasses.aspx" />
+           <asp:Button ID="cancel_btn" CssClass="button" runat="server" text="CANCEL" PostBackUrl="~/ListClasses.aspx"/> 
        </div>
     </div> <!-- end confirm page wrapper -->
 </asp:Content>

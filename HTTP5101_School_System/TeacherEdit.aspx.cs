@@ -35,6 +35,7 @@ namespace HTTP5101_School_System
             {
                 teacher.InnerHtml = "There was an error finding that teacher.";
             }
+            teachersubmit_btn.PostBackUrl = "~/Listteachers.aspx";
         }
     }
 }

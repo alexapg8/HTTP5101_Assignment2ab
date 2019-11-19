@@ -11,7 +11,8 @@ namespace HTTP5101_School_System
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            dropconfirm_btn.PostBackUrl = "~/ListClasses.aspx";
+            cancel_btn.PostBackUrl = "~/ListClasses.aspx";
         }
     }
 }

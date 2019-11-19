@@ -10,10 +10,17 @@
 <body>
     <header>
         <div class="cwidth">
+            <!--PAGE REFERENCES: 
 
+             * Link: https://i.pinimg.com/originals/43/73/a0/4373a0b5436c8b5b7b35fb19f6a95900.jpg
+             Author:Marvel
+             Date Accessed: November 18, 2019,
+             Purpose: Marvel's original logo to stylize our page.
+            -->
+            <!-- Xmen logo and name for header -->
             <img src="Content/images/xmenlogo.png" alt="Xavier's School for Gifted Youngsters logo" id="XmenLogo_header"/>
             <h1 id="school_name">Xavier's School for Gifted Youngsters</h1>
-         
+            <!-- header navigation -->
             <div class="listnav">
                 <ul>
                     <li><a href="ListStudents.aspx">Students</a></li>
@@ -32,8 +39,12 @@
     </div>
     <footer>
         <div class="cwidth">
-            <div><img src="Content/images/xmenlogo.png" alt="Xavier's School for Gifted Youngsters logo" id="XmenLogo_footer"/></div>
+            <!-- Xmen logo and name for footer -->
+            <div>
+                <img src="Content/images/xmenlogo.png" alt="Xavier's School for Gifted Youngsters logo" id="XmenLogo_footer"/>
+            </div>
             Xavier's School for Gifted Youngsters
+            <!-- footer nav -->
             <div class="listnavfooter">
                 <ul>
                     <li><a href="ListStudents.aspx">Students</a></li>
@@ -42,7 +53,10 @@
                     <li><a href="LogInForm.aspx">Log Out</a></li>
                 </ul>
             </div>
-           <div id="copyright">Copyright 2019</div>
+            <!-- copyright info -->
+           <div id="copyright">
+               Copyright 2019
+           </div>
         </div>
     </footer>
 </body>

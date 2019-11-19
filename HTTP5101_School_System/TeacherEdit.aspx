@@ -15,6 +15,6 @@
         <asp:TextBox class="teacheredit_text" runat="server"></asp:TextBox><br />
     </div>
 
-       <asp:Button CssClass="button" runat="server" text="SUBMIT" PostBackUrl="~/ListTeachers.aspx" />
+       <asp:Button ID="teachersubmit_btn" CssClass="button" runat="server" text="SUBMIT" PostBackUrl="~/ListTeachers.aspx" />
 
 </asp:Content>

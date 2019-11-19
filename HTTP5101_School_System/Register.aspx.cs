@@ -53,7 +53,8 @@ namespace HTTP5101_School_System
                 }
 
 
-
+            registrationsubmit_btn.PostBackUrl = "~/ListClasses.aspx";
+            registrationdrop_btn.PostBackUrl = "~/DropClass.aspx";
         }
     }
 }

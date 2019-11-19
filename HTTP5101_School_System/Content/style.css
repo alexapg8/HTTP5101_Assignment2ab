@@ -29,6 +29,9 @@ footer {
 body {
 	font-family:Arial,sans-serif;
 }
+#copyright {
+	font-size:0.5em;
+}
 /*CSS FOR TABLE-LIKE STYLING*/
 #students_result {width:100%;}
 .listitem {background:#fefefe; padding: 12px 5%; width:90%; overflow:hidden;}
@@ -39,11 +42,6 @@ body {
 .listitem a:visited {color:#840032;}
 .listitem a:hover {color:#e5dada;}
 .listitem a:active {color:#e5dada;}
-/*
-    sandbox.bittsdevelopment.com/colcalc
-    columns : 4
-    gutter/column ratio : 0.2
-*/
 .col4, .col4last{float:left; width:21.73%; margin-right:4.34%;}
 .col4last{margin-right:0%;}
 .search_name {
@@ -164,6 +162,3 @@ a:active {
 	margin-right:5em;
 	font-size:0.5em;
 	}
-#copyright {
-	font-size:0.5em;
-}
